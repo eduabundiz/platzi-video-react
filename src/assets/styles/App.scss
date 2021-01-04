@@ -1,9 +1,28 @@
+@import "./Vars.scss";
+@import "./Media.scss";
 body {
     margin: 0;
-    font-family: 'Muli', sans-serif;
-    background: #8f57fd;
+    font-family: $theme-font;
+    background: $main-color;
 }
 
 * {
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(190, 189, 189, 0.219);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.281);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.699);
 }
